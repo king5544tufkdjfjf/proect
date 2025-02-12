@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Комікс про грибів</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="comic">
+        <h1>Комікс про Пластичного і Трубаця</h1>
+
+        <div class="grid">
+            <div class="scene">
+                <img src="scene1.png" alt="Пластичний">
+                <div class="text-box">Пластичний: Привіт, Трубачу! Чому ти сумний?</div>
+            </div>
+            <div class="scene">
+                <img src="scene2.png" alt="Трубач">
+                <div class="text-box">Трубач: Я втратив свою трубу!</div>
+            </div>
+
+            <div class="scene">
+                <img src="scene1.png" alt="Пластичний">
+                <div class="text-box">Пластичний: Давай пошукаємо разом!</div>
+            </div>
+            <div class="scene">
+                <img src="scene2.png" alt="Трубач">
+                <div class="text-box">Трубач: Дякую, друже!</div>
+            </div>
+
+            <div class="scene">
+                <img src="scene1.png" alt="Пластичний">
+                <div class="text-box">Пластичний: Де ти її востаннє бачив?</div>
+            </div>
+            <div class="scene">
+                <img src="scene2.png" alt="Трубач">
+                <div class="text-box">Трубач: На галявині біля дуба.</div>
+            </div>
+
+            <div class="scene">
+                <img src="scene1.png" alt="Пластичний">
+                <div class="text-box">Пластичний: Йдемо туди!</div>
+            </div>
+            <div class="scene">
+                <img src="scene2.png" alt="Трубач">
+                <div class="text-box">Трубач: Гаразд!</div>
+            </div>
+
+            <div class="scene">
+                <img src="scene1.png" alt="Пластичний">
+                <div class="text-box">Пластичний: Дивись, там щось блищить!</div>
+            </div>
+            <div class="scene">
+                <img src="scene2.png" alt="Трубач">
+                <div class="text-box">Трубач: Це ж просто банка...</div>
+            </div>
+
+            <div class="scene">
+                <img src="scene1.png" alt="Пластичний">
+                <div class="text-box">Пластичний: Треба питати в друзів.</div>
+            </div>
+            <div class="scene">
+                <img src="scene2.png" alt="Трубач">
+                <div class="text-box">Трубач: Давай запитаємо у Їжака.</div>
+            </div>
+
+            <div class="scene">
+                <img src="scene1.png" alt="Пластичний">
+                <div class="text-box">Пластичний: Їжаче, ти не бачив трубу?</div>
+            </div>
+            <div class="scene">
+                <img src="scene3.png" alt="Їжак">
+                <div class="text-box">Їжак: Так, її забрала Ворона!</div>
+            </div>
+
+            <div class="scene">
+                <img src="scene1.png" alt="Пластичний">
+                <div class="text-box">Пластичний: О ні! Де вона зараз?</div>
+            </div>
+            <div class="scene">
+                <img src="scene3.png" alt="Їжак">
+                <div class="text-box">Їжак: Полетіла до гнізда.</div>
+            </div>
+
+            <div class="scene">
+                <img src="scene1.png" alt="Пластичний">
+                <div class="text-box">Пластичний: Йдемо до дерева!</div>
+            </div>
+            <div class="scene">
+                <img src="scene2.png" alt="Трубач">
+                <div class="text-box">Трубач: Ворона! Віддай мою трубу!</div>
+            </div>
+
+            <div class="scene">
+                <img src="scene4.png" alt="Ворона">
+                <div class="text-box">Ворона: Вона така гарна, я думала, що це скарб!</div>
+            </div>
+            <div class="scene">
+                <img src="scene2.png" alt="Трубач">
+                <div class="text-box">Трубач: Це мій музичний інструмент!</div>
+            </div>
+
+            <div class="scene">
+                <img src="scene4.png" alt="Ворона">
+                <div class="text-box">Ворона: Гаразд, тримай.</div>
+            </div>
+            <div class="scene">
+                <img src="scene2.png" alt="Трубач">
+                <div class="text-box">Трубач: Дякую! Я знову можу грати!</div>
+            </div>
+
+            <div class="scene">
+                <img src="scene1.png" alt="Пластичний">
+                <div class="text-box">Пластичний: Ура! Давай святкувати!</div>
+            </div>
+        </div>
+    </div>
+    <div class="conclusion">
+        <p>Вивчення грибів дуже важливе, тому що вони відіграють ключову роль у природі! 🍄  
+        Вони допомагають розкладати органічні речовини, підтримують екосистему та навіть можуть лікувати хвороби!  
+        Будьмо уважні до природи та її чудес! 🌿</p>
+    </div>
+    
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const scenes = document.querySelectorAll(".scene");
+    
+        scenes.forEach(scene => {
+            scene.addEventListener("click", function() {
+                scene.classList.add("read"); // Додає клас "read" після кліку
+            });
+        });
+    });
+    </script>
+    
+</html>
