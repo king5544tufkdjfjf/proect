@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('fon.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #f4f4f4;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.comic {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #FFD700;
+}
+
+/* Грід для двох колонок */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.scene {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+/* Збільшення зображення при наведенні */
+.scene img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.scene:hover img {
+    transform: scale(1.1);
+}
+
+/* Затемнення інших сцен */
+.comic:hover .scene:not(:hover) img {
+    filter: brightness(20%);
+    overflow: hidden
+}
+.text-box {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%); /* Центрує текст */
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 80%; /* Обмежуємо ширину тексту */
+    max-width: 300px; /* Запобігає надто широкому тексту */
+    text-align: center;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    overflow: hidden
+}
+
+/* Прочитані сцени змінюють колір тексту на зелений */
+.scene.read .text-box {
+    color: lime;
+}
+
+/* Висновок */
+.conclusion {
+    margin-top: 30px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    color: yellow;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+/* Адаптивність */
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
