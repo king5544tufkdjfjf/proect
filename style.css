@@ -73,6 +73,9 @@ h1 {
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
     overflow: hidden
 }
+.text-box:hover{
+ font-size: 30px;
+}
 
 /* Прочитані сцени змінюють колір тексту на зелений */
 .scene.read .text-box {
